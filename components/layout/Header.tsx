@@ -2,11 +2,12 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Menu } from "lucide-react";
+import { Menu, ArrowLeft, Github, ExternalLink, Calendar, Tag } from "lucide-react";
+import Link from "next/link";
 import { ThemeToggle } from "./ThemeToggle";
 import { MobileMenu } from "./MobileMenu";
 import { useActiveSection } from "@/hooks/useActiveSection";
-import { navLinks } from "@/lib/data";
+import { navLinks, projects } from "@/lib/data";
 
 const sectionIds = navLinks.map((l) => l.href.replace("#", ""));
 

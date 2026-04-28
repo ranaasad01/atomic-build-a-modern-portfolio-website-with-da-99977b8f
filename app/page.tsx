@@ -1,8 +1,8 @@
 import { Header } from "@/components/layout/Header";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
-import { SkillsAndProjects } from "@/components/sections/SkillsAndProjects";
-import { ContactAndFooter } from "@/components/sections/ContactAndFooter";
+import { SkillsSection, ProjectsSection } from "@/components/ui/ScrollReveal";
+import { ContactFooter } from "@/components/sections/About";
 
 export default function Page() {
   return (
@@ -10,8 +10,9 @@ export default function Page() {
       <Header />
       <Hero />
       <About />
-      <SkillsAndProjects />
-      <ContactAndFooter />
+      <SkillsSection />
+      <ProjectsSection />
+      <ContactFooter />
     </main>
   );
 }
